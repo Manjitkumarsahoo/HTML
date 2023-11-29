@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Demo on text fields</h3>
+    <input type="text" id="tf1" name="t1" value="Veg Fride RIce" autofocus tabindex="1">
+    <br>
+    <input type="text" id="tf2" name="t2" size="100" tabindex="5">
+    <br>
+    <input type="text" id="tf3" name="t3" placeholder="Enter full name" tabindex="2">
+    <br>
+    <input type="text" id="tf4" name="t4" maxlength="10" tabindex="4">
+    <br>
+    <input type="text" id="tf5" name="t5" required tabindex="6">*
+    <br>
+    <input type="text" id="tf6" name="t6" style="color: red; font-size: 18px; margin: left 400px; margin-top: 50px ;" tabindex="3">
+    <br>
+    <input type="text" id="tf7" name="t7" disabled>
+    <br>
+</body>
+</html><!--
+    id  => must be unique
+         => used client side programs (for coll data from html input controls)
+        JS:
+            var = tf1.value 
+            var = t1.value  X
+        
+    name => unique or duplicate
+              => used server side programs (for coll data from html input controls)				
+        JSP:
+            var = request.getParameter("t1")
+            var = request.getParameter("tf1")  X
+-->

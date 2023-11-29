@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>demo on radio buttons</h3>
+	<form action="newcard.php">
+		<label>Resident Type:</label> 		
+		<input type="radio" id="rt1"  name="resident" value="Ind" checked> <label>Resident</label>
+        <input type="radio" id="rt1"  name="resident" value="nri"> <label>Non-Resident Indian (NRI*)</label>
+		<br>
+		<label>Gender:</label> 		
+		<input type="radio" id="gen1"  name="gender" value="male"> <label>Male</label>
+		<input type="radio" id="gen1"  name="gender" value="female"> <label>FeMale</label>
+		<input type="radio" id="gen1"  name="gender" value="transgen"> <label>Transgender</label>
+		<br>
+		<label>Details of:</label>
+ 	    <input type="radio" id="det1"  name="details" value="father"> <label>Father</label>
+ 	    <input type="radio" id="det2"  name="details" value="mother"> <label>Mother</label>
+ 	    <input type="radio" id="det3"  name="details" value="guardian"> <label>Guardian</label>
+ 	    <input type="radio" id="det4"  name="details" value="husband"> <label>Husband</label>
+ 	    <input type="radio" id="det5"  name="details1" value="wife"> <label>Wife</label>
+		<br>
+		<span>For children below 5 years Father/Mother/Guardian’s details are mandatory. Adults can opt not to specify this information.</span>
+ 
+		<br>
+		<input type="submit" name="sb" value="Apply">
+	</form>
+</body>
+</html>

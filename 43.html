@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>demo on file uploading</h3>
+	<form action="upload" method="post" enctype="multipart/form-data">
+		<input type="file" id="file1" name="file1">  <!-- any type file, but only 1 file -->
+		<br>
+		<input type="file" id="file2" name="file2" multiple>  <!-- any type file & no.of files -->
+		<br>
+		<input type="file" id="file3" name="file3" accept=".pdf, .docx">  <!-- any type file & no.of files -->
+														<!--
+															accept=".jpg"
+															accept=".html,.css,.js"
+															accept="image/*"		-->
+		<br>
+		<input type="submit" name="sb" value="Submit">
+	</form>
+</body>
+</html>

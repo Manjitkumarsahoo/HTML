@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Mode of Training</label> <span style="color:red;">*</span> <br>
+		<select id="mot" name="ttype" required>
+			<option value="">Select Training Type</option>
+			<option value="CT">Classroom Training</option>
+			<option value="OT">Online Training</option>
+			<option value="WT">Weekend Training</option>
+			<option value="PT">Project Training</option>
+			<option value="IN">Internship</option>
+		</select>
+		<br>
+		<label>Course</label> <span style="color:red;">*</span> <br>
+		<select id="course" name="course" multiple required>	
+			<option value="">Select Course</option>
+			<option value="C">C</option>
+			<option value="CPP">CPP</option>
+			<option value="CJ">CoreJava</option>
+			<option value="AJ">AdvJava</option>
+			<option value="HJS">HTML/JavaScript</option>
+		</select>
+		<br>
+
+		<button>Submit</button>
+    </form>
+</body>
+</html>
