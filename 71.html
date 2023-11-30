@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add()
+        {
+          //  document.write("hi");
+          var x=parseInt(document.getElementById("t1").value);
+        var y=parseInt(document.getElementById("t2").value);
+        var z=x+y;
+      document.getElementById("t3").innerText="sum="+z;
+        }
+       
+    </script>
+</head>
+<body>
+    <form>
+        first number<input type="text" id="t1"><br>
+        second number<input type="text" id="t2"><br>
+          
+        <input type="button" value="clickme" onclick="add()"/>
+        
+    </form>
+    <p id="t3"></p>
+</body>
+</html>
