@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Example on push method</h2>
+    <script>
+        var fruits=new Array();
+        fruits.push("Apple");
+        fruits.push("Mango");
+        fruits.push("orange");
+
+        let newLength=fruits.push("Papayas");
+
+        document.write(newLength+"<br>")
+        document.write("Fruites =>"+fruits+"<br>")
+
+
+        ele=fruits.pop();
+        document.write("1st popped" +ele+ "<br>")
+        document.write("2nd popped"+fruits.pop()+"br");
+
+        fruits.push("Banana");
+        document.write("fruites :"+fruits+"<br>");
+
+
+    </script>
+</body>
+</html>

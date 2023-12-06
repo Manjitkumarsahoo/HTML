@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function checkpw()
+        {
+            var pwd=pw.value;
+            var len=pwd.trim().length;
+            var msg="";
+
+            if(len>=1 && len<=5)
+                msg="Weak";
+            else if (len>=6 && len<=10)
+                msg="Good"
+            else if (len>=11)
+                msg="Strong"
+
+            res.value="password strength :"+msg;
+        }
+    </script>
+</head>
+<body>
+    <label>Password</label>
+    <input type="password" id="pw" oninput="checkpw()" maxlength="15">
+    <output id="res"></output>
+</body>
+</html>

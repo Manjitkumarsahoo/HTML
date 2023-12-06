@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Example on deleting ,updating & inserting ele</h2>
+    <script>
+        var colors=["Red","Green","Blue"];
+
+        document.write(colors+"<br>")
+
+        let x=colors.splice(0,1);
+        document.write(x +"<br>")
+        document.write(colors+"<br>")
+
+
+        var a=[10, 20, 30, 40, 50, 60, 70];
+        document.write("A "+ a + "<br>");	
+        var remdata = a.splice(2, 3); // Removes 2,3,4 ele's
+        document.write("A after del => "+ a + "<br>"); 
+        document.write("RemEle "+ remdata + "<br>"); 
+
+
+        var colors = ["Green", "Blue",   "Red", "Cyan"]
+        colors.splice(2, 0, "Pink"); //it not removes any ele but insert "Pink" @2 pos
+        document.write("after inserting => "+ colors + "<br>"); 
+        colors.splice(0, 0, "Black","Yellow"); //it also inserts both elements @0 pos
+        document.write("after inserting => "+ colors + "<br>"); 
+
+        //colors = [Black,Yellow,Green,Blue,Pink,Red,Cyan]
+        temp = colors.splice(1, 2, "Purple", "Voilet"); // it removes 1,2 ele's and insert "Purple", "Voilet"
+        document.write("After update => "+ colors + "<br>"); 
+        document.write(temp + "<br>");
+    </script>
+</body>
+</html>

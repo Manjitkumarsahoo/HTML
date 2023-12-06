@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check()
+        {
+            var no=parseInt(document.getElementById('t1').value);
+            if(no%2==0)
+            {
+                document.getElementById('x').innerText="even no";
+            }
+            else
+            {
+                document.getElementById('x').innerText="odd no";
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        Enter a number <input type="text" id="t1"><br>
+        <input type="button" value="clickme" onclick="check()"><br>
+    </form>
+    <p id="x"></p>
+</body>
+</html>

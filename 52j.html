@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Example on shift & unshift</h2>
+    <script>
+        var colors=["Red","Green","Blue","cyan"];
+        let first=colors.shift();
+        let second=colors.shift();
+
+        document.write(first+"<br>");
+        document.write(second +"<br>");
+        document.write(colors.length+"<br>");
+        document.write(colors+"<br>");
+
+        colors.unshift("yellow")
+        len=colors.unshift("Black")
+
+        document.write(len+"<br>")
+        document.write(colors+"<br>")
+    </script>
+</body>
+</html>

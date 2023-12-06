@@ -1,0 +1,22 @@
+//Comparison operator
+a=10;
+b=20;
+c=30;
+console.log(a>b);
+console.log(a<b);
+console.log(a>=b);
+console.log(c<=b);
+console.log(a==b);
+console.log(a!=b);
+d=50;
+console.log(a==d);
+console.log(a===d);
+console.log(c==d);
+console.log(c===d);
+console.log(a!=d);
+console.log(a!==d);
+console.log(c!=d);
+console.log(c!==d);
+console.log(10<20<30);
+console.log(10<70<3);
+console.log(10<70<-3);

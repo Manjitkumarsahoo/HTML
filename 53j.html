@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>example on indexOf(), lastIndexOf(), include(), sort(), reverse() and join() methods</h2>
+    <script>
+        var a=[65, 10, 20, 30, 10, 50, 40, 77, 10, 99, 88, 10];
+
+        document.write(a +"<br>")
+        document.write(a.indexOf(10)+"<br>")
+        document.write(a.indexOf(10,5)+"<br>")
+        document.write(a.indexOf(55)+"<br>")
+
+        document.write(a.lastIndexOf(10)+"<br>")
+        document.write(a.includes(30)+"<br>")
+        document.write(a.includes(11)+"<br>")
+
+        a.sort();
+        document.write("after sort :"+a+"<br>")
+
+        let name=["Siva", "Venky", "Prakash", "Radhi", "Anu", "Raghu"]
+        name.sort();
+        document.write(name+"<br>")
+
+
+        let b=[12,67,40,90,30]
+        b.reverse();
+        document.write(b+"<br>")
+
+        document.write(name.join("$"));
+    </script>
+</body>
+</html>

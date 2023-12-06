@@ -1,0 +1,45 @@
+<!-- example on validating password -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validatepw()
+        {
+            var str=twp.value.trim();
+            var ac=0,dc=0,sc=0;
+
+            if(str.length>=6)
+            {
+                for(i=0;i<str.length;i++)
+                {
+                    ch=str.charAt(i);
+                    if((ch>='A' && ch>='Z') || (ch>='a' && ch<='z'))
+                        ac++
+                    else if(ch>='0' && ch<='9')
+                        dc++
+                    else if(ch=="$" || ch=="@" || ch=="&" || ch=="#")
+                        sc++
+                }
+                    if(ac==0 || dc==0 || sc==0)
+                        msg.value="plz choose strong pw, try mix of alpha, digit and special char($,@,&,#)";
+                    else
+                        msg.value="ps ok"
+            }
+            else
+            msg.value="PW length at least 6 char min"
+        }
+    </script>
+</head>
+<body>
+    <h2>Demo on string function</h2>
+    <label>Enter email</label>
+    <input type="email" id="mid"><br>
+    <label> Enter password</label>
+    <input type="password" id="twp"><br>
+    <output id="msg"></output><br>
+    <input type="submit" value="singUp" onclick="validatepw()">
+</body>
+</html>
