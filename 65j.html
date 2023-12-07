@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showMessage(from , text)
+        {
+            from = '*'+ from +'*';  //modification of formal argument
+            document.write(from + ':' + text);
+        }
+    </script>
+</head>
+<body>
+    <h2>Demo on parameter</h2>
+    <script>
+        let from ="siva";
+        let text ="Hello";
+        document.write(from +"<br>");
+
+        showMessage(from,text);
+
+        document.write("<br>" + from); //Actual argument
+    </script>
+</body>
+</html>

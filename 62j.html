@@ -1,0 +1,25 @@
+<!-- If a same-named variable is declared inside the function then it shadows the outer one. 
+For Example, in the code below the function uses the local userName. The outer one is ignored -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Demo on shadowing</h2>
+    <script>
+        window.userName="Apple";  //outer/global
+
+        function showMessage()
+        {
+            let userName="Mango" //local variable
+            document.write("Hi" + userName + "<br>");
+            document.write("Hello " + window.userName + "<br>")
+        }
+        showMessage();
+        document.write("Hey " + userName + "<br>")
+    </script>
+</body>
+</html>

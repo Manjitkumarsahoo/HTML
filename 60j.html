@@ -1,0 +1,25 @@
+<!-- Local variables
+Any variable declared inside a function or inside a block is called as local variable.
+local variables are visible/accessable  with in that function/block -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showMessage()
+        {
+            let msg="Hello i am Manjit kumar sahoo" //its local variable use within fun
+            alert(msg);
+        }
+    </script>
+</head>
+<body>
+    <h2>Demo on local variable</h2>
+    <script>
+        showMessage();
+        alert(msg); //error ! the variable is local to that function
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function show1(name,msg)
+        {
+            if(name=== undefined)
+            {
+                name="None";
+            }
+            if(msg === undefined)
+            {
+                msg='no text given';
+            }
+            document.write(name + ":" + msg +"<br>"); 
+        }
+
+        function show2(name,msg)
+        {
+            name = name || 'None';
+            msg = msg || 'no text given'
+
+            document.write(name + ":" + msg + "<br>");
+        }
+    </script>
+</head>
+<body>
+    <h2>Demo on default parameters old-style (brfor JS6)</h2>
+
+    <script>
+        show1("Siva","What's doing on");
+        show1("Kumar");
+        show1();
+
+        show2("Ram", "What's up");
+        show2("Sam");
+        show2();
+    </script>
+</body>
+</html>
