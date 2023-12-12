@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let ob={ "mymethod" :
+            function(){
+                document.write("this is method 1" + "<br>")
+            },
+            "add" :function(a,b){
+                return(a+b);
+            }
+        }
+
+    ob.mymethod()
+    document.write("sum is " +ob.add(12,45)+"<br>")
+    document.write(ob.toString())
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
