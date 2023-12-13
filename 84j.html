@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    var p = {name:"mobile",unitprice:10000,qty:5};
+    </script>
+</head>
+<body>
+    <script>
+        Object.prototype.gst=10;
+        Object.prototype.discount=2;
+
+        Object.prototype.getamount=function (){
+            amt = this.qty*this.unitprice;
+            gstamt = amt*this.gst/100;
+            da = amt*discount/100;
+
+            return amt + gstamt - da;
+        };
+        document.write(`Name : ${p.name} <br>`);
+        document.write(`Qty : ${p.qty} <br>`);
+        document.write(`unitprice : ${p.unitprice} <br>`);
+        document.write(`Total Amount : ${p.getamount()} <br>`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Demo on inheritance</h2>
+    <script>
+        function GP(){
+            document.write("i am Gp<br>")
+        }
+
+        function P(){
+            document.write("i am p<br>");
+            GP();
+        }
+        function C(){
+            document.write("i am chiled<br>");
+            P();
+        }
+
+        let c=new C();
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function A(){
+            document.write("i ma parent constructor<br>");
+        }
+        function B(){
+            document.write("i ma child constructor<br>");
+            A();
+        }
+    </script>
+</head>
+<body>
+    <h2>Demo on inheritance</h2>
+    <script>
+        let a=new A();  //only alocate memory for A
+        let b= new B();  //its allocate memory for both A & B
+    </script>
+</body>
+</html>

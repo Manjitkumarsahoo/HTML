@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Creating class</h2>
+    <script>
+        class product{
+            constructor(pcode,pname,price){
+                this.pcode=pcode;
+                this.pname=pname;
+                this.price=price;
+            }
+        }
+
+let p = new product("P110", "PenDrive 32gb", 300);
+
+document.write("PCode	:" + p.pcode, "<br>");
+document.write("Name	 :" + p.pname, "<br>");
+document.write("Price 	:" + p.price, "<br>");
+document.write( p );
+    </script>
+</body>
+</html>

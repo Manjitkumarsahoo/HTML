@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Creating object array with constructor</h2>
+    <script>
+        function Emp(id,name,sal){
+            this.id=id;
+            this.name=name;
+            this.sal=sal;
+        }
+
+       let emps=[new Emp(101,'Manjit',90000),
+                    new Emp(102,'Baya',80000),
+                    new Emp(103,'Srikant',60000)
+                ];
+        document.write("<div style='display:grid; grid-template-columns:auto auto;'>")        
+        for(let e of emps){
+            document.write(`<div style='background:#99ffff; width:400px; margin-bottom:5px;'>`);
+            document.write(`<h2>${e.id}</h2>`);
+            document.write(`<h2 style='display:inline-block; width:300px;'>${e.name}</h2>`);
+            document.write(`<h2 style='display:inline-block; width:300px;'>${e.sal}</h2>`);
+            document.write("</div>")
+        }
+        document.write("</div>")
+    </script>
+</body>
+</html>

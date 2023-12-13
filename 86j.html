@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function human(name,age,gen){
+            this.name=name;
+            this.age=age;
+            this.gen=gen;
+        }
+
+        function Employee(id,job,salary){
+            human.call(this,"Manjit",25,"Male")
+            this.id=id;
+            this.job=job;
+            this.sal=salary;
+        }
+
+        let emp=new Employee(101,"software Developer",100000)
+        document.write("Id	:"+ emp.id +"<br>");
+	    document.write("Name	:"+ emp.name +"<br>");
+	    document.write("Age	:"+ emp.age +"<br>");
+	    document.write("Gendar	:"+ emp.gen +"<br>");
+	    document.write("Job	:"+ emp.job +"<br>");
+	    document.write("Salary	:"+ emp.salary +"<br><br>");
+    </script>
+</body>
+</html>

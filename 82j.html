@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoping</title>
+</head>
+<body>
+    <input type="text" name="pn" id="pn" placeholder="Enter product name">&nbsp;&nbsp;
+    <input type="text" name="inv" id="inv" placeholder="Enter quantity">&nbsp;&nbsp;
+    <input type="text" name="up" id="up" placeholder="Enter unit price">&nbsp;&nbsp;
+    <button onclick="addproduct()">Add product</button>&nbsp;&nbsp;
+    <button onclick="getbill()">Getbill</button>
+
+    <script>
+        var products=new Array();
+
+        function product(name,inventory,price){
+            this.name=name;
+            this.inventory=inventory;
+            this.price=price;
+        }
+
+        function addproduct(){
+            products.push(new product(pn.value,inv.value,up.value));
+            pn.value="";
+            inv.value="";
+            up.value="";
+            pn.focus();
+        }
+
+        function getbill(){
+            let billamt=0;
+            let pamt=0;
+            let slno=1;
+
+            for (let p of products){
+                pamt = p.inventory*p.price;
+                document.write(`${slno} 
+                    &nbsp;&nbsp;&nbsp; ${p.name} 
+                    &nbsp;&nbsp;&nbsp;  ${p.inventory}  
+                    &nbsp;&nbsp;&nbsp; ${p.unit_price} 
+                    &nbsp;&nbsp;&nbsp; Rs.${pamt}<br>`);
+
+                    billamt += pamt;
+                    slno++
+            }
+            document.write(`Total Bill Amount : Rs.${billAmt} <br>`);
+        }
+    </script>
+</body>
+</html>
