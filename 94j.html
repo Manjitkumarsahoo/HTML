@@ -1,0 +1,25 @@
+<!--The oninput Event
+The oninput event is often to to some action while the user input data.
+
+Below is an example of how to use the oninput to change the content of an input field.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>The oninput Attribute</h2>
+    Emter your name: <input type="text" id="fname" oninput="upperCase()">
+
+    <script>
+        function upperCase()
+        {
+            const x=document.getElementById("fname");
+            x.value=x.value.toUpperCase();
+        }
+    </script>
+</body>
+</html>

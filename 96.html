@@ -1,0 +1,28 @@
+<!--The onmouseover and onmouseout Events
+The onmouseover and onmouseout events can be used to trigger a function when the user mouses over, or out of, an HTML element:-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The mouseover Attribute</h1>
+
+    <div onmouseover="mover(this)" onmouseout="mout(this)" style="background-color: blue;width: 120px;height: 20px;padding: 40px;">Mouse over me</div>
+
+    <script>
+        function mover(obj)
+        {
+            obj.innerHTML="Thank You"
+        }
+
+        function mout(obj)
+        {
+            obj.innerHTML="mouse over me"
+        }
+    </script>
+</body>
+</html>

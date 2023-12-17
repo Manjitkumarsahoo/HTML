@@ -1,0 +1,28 @@
+<!--The onmousedown, onmouseup and onclick Events
+The onmousedown, onmouseup, and onclick events are all parts of a mouse-click. First when a mouse-button is clicked, the onmousedown event is triggered, then, when the mouse-button is released, the onmouseup event is triggered, finally, when the mouse-click is completed, the onclick event is triggered.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The mousedown Attribute</h1>
+    <div onmousedown="mdown(this)" onmouseup="mup(this)" style="background-color: brown;width: 90px;height: 20px;padding: 40px;">Click Me</div>
+    <Script>
+        function mdown(obj)
+        {
+            obj.style.backgroundcolor="#1ec525";
+            obj.innerHTML="Release me";
+        }
+
+        function mup(obj)
+        {
+            obj.style.backgroundcolor="#D94A38";
+            obj.innerHTML="Thank You";
+        }
+    </Script>
+</body>
+</html>
