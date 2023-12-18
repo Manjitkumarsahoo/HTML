@@ -1,0 +1,31 @@
+<!--Add many event handler to the same element-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>javascript addEventListener</h2>
+
+    <button id="mybtn">click here</button>
+
+    <script>
+        var x=document.getElementById("mybtn");
+        x.addEventListener("click",myfunction);
+        x.addEventListener("click",someotherfunction);
+
+
+        function myfunction()
+        {
+            alert("i am Manjit kumar sahoo")
+        }
+
+        function someotherfunction()
+        {
+            alert("i am from BBSR")
+        }
+    </script>
+</body>
+</html>

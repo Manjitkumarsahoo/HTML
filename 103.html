@@ -1,0 +1,39 @@
+<!--Add different type of events to the same element-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>javascript addEventListener</h2>
+
+    <button id="mybtn">click here</button>
+
+    <p id="demo"></p>
+
+    <script>
+        var x=document.getElementById("mybtn");
+        x.addEventListener("mouseover",myfunction);
+        x.addEventListener("click",mysecondfunction);
+        x.addEventListener("mouseout",mythirdfunction);
+
+        function myfunction()
+        {
+           document.getElementById("demo").innerHTML +="Hello everyone!<br>"; 
+        }
+
+        function mysecondfunction()
+        {
+            document.getElementById("demo").innerHTML +="i am Manjit kumar sahoo <br>";
+        }
+
+        function mythirdfunction()
+        {
+            document.getElementById("demo").innerHTML +="i ma from BBSR";
+        }
+    </script>
+</body>
+</html>
