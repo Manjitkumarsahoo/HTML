@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function checkname(fullname){
+            let ch=fullname.which;
+
+            if(!((ch>=65 && ch<=90) || (ch>=97 && ch<=122)))
+                fullname.preventDefault();
+
+            console.log(ch);
+        }
+    </script>
+</head>
+<body>
+    <h1 id="head1">Demo on keyPress event</h1>
+    <label>fullname</label><input type="text" id="fullname"><br><br>
+    <label>Phone</label><input type="text" id="Phone" maxlength="10">
+
+
+    <script>
+        document.getElementById("fullname").addEventListener("keypress",checkname);
+
+        document.getElementById("Phone").addEventListener("keypress"),function(ph){
+            let ch = ph.which;				 
+			if( !  (ch>=48 && ch<=57)  ) 
+		    ph.preventDefault();
+		     console.log("Invalid Num");
+        }
+    </script>
+</body>
+</html>

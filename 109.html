@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var data=["Siva Kumar Y", "Civil Engineer", "C Faculty", "Oracle Faculty", "Java Faculty", "Web Tech", "Naresh i Tech"];
+        var i=0;
+
+        function myfun()
+        {
+            if (i>6){
+                i=0;
+            }
+            document.getElementById("head1").innerHTML=data[i];
+            i++;
+        }
+    </script>
+</head>
+<body>
+    <h2 id="head1" style="background-color: bisque; text-align: center;">Welcome</h2>
+    
+    <div id="div1" style="background: green; height: 100px;">
+        
+        <h1>Demo on mouse over/out events</h1>
+    </div>
+
+    <script>
+        document.getElementById("head1").addEventListener("dblclick",myfun);
+
+        document.getElementById("div1").addEventListener("mouseover",() =>{
+            document.getElementById("div1").style.backgroundColor="red";
+            console.log("mouseover");
+        });
+
+        document.getElementById("div1").addEventListener("mouseout",function(){
+            console.log("mouseout");
+            document.getElementById("div1").style.backgroundColor="red";
+        });
+    </script>
+</body>
+</html>
